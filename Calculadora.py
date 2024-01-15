@@ -14,6 +14,8 @@ class Calculadora(QtWidgets.QDialog):
         self.Resultado=self.findChild(QtWidgets.QLineEdit,"Resultado")
         self.Equal=self.findChild(QtWidgets.QPushButton,"Equal")
         self.Equal.clicked.connect(self.calculateResult)
+        self.Clear=self.findChild(QtWidgets.QPushButton,"Clear")
+        self.Clear.clicked.connect(self.ClearText)
         self.show()
         
     def ClearText(self):
