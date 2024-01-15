@@ -44,10 +44,11 @@ class Calculadora(QtWidgets.QDialog):
         return result
         
         
-
-app=QtWidgets.QApplication(sys.argv)
-window=Calculadora()
-app.exec_()
+if __name__=="__main__":
+    app=QtWidgets.QApplication(sys.argv)
+    window=Calculadora()
+    
+    app.exec_()
 
 
 
